@@ -1,0 +1,59 @@
+	body{
+	background-color:   #E0FFFF;
+	}
+	h1{
+	text-align: center;
+	color:  #4AA02C;
+	font: arial;
+	font-size: 50px;
+	}
+	p{
+	text-align: center;
+	font: arial;
+	font-size: 25px;
+	color: #4AA02C;
+	}
+	button.restart{ /* in questo modo creo una sottoclasse a cui applicare il foglio di stile*/
+	border-radius: 50%;
+	background-color:   #FFF8C6;
+	width: 108px;
+	height: 108px;
+	font-size: 10px;
+	left: 1300px;
+	top: 600px;
+	position: absolute;
+	font-family: monospace;
+	font-size: 18px;
+	}
+	#player1{
+	transform: rotate(-20deg); /*posizionata la ruoto*/
+	position: absolute;
+	left: 100px; /*cordinata x partendo da sinistra*/
+	top: 250px; /*cordinata y*/
+	}
+	#player2{
+	transform: rotate(20deg);
+	position: absolute;
+	right: 100px;/* cordinata x partendo da destra*/
+	top: 250px;
+	}
+	#canvas{
+	background: #CFECEC;
+	display: block;
+	margin: 0 auto;
+	border: 10px solid #ffff;
+	}
+	#console{
+	animation: 10s slide-right;
+	animation-duration: 1s;
+	}
+
+	@keyframes slide-right{
+		from {
+		margin-left: -100%;
+		}
+
+		to {
+		margin-left: 0%;
+		}
+	}
